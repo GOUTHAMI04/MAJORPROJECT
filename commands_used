@@ -1,0 +1,43 @@
+docker
+
+https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04
+
+sudo systemctl start docker
+sudo docker swarm init
+sudo systemctl enable docker
+systemctl status docker 
+sudo usermod -aG docker vagrant
+sudo chmod 666 /var/run/docker.sock
+docker swarm leave --force
+docker swarm join-token manager
+docker swarm join-token worker
+docker swarm join --token SWMTKN-1-0z9n3ptli8pat2825n4c5vvspzmvwqma971sa0qwaxq6cq9arr-dw651nfnep41al0lbc22rga5y 192.168.33.12:2377
+docker node ls
+docker info
+sudo curl -L "https://github.com/docker/compose/releases/download/1.28.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+ docker info | grep Swarm
+ docker node rm $NODE_ID
+ 
+
+
+vagrant
+
+vagrant reload --provision  --> wn changes in Vagrantfile
+vagrant init 
+vagrant up 
+vagrant halt --force  --> shutdowns vm
+vagrant provision
+https://www.viralpatel.net/find-process-id-using-port-windows/
+https://stackoverflow.com/questions/36667648/vagrant-cant-use-the-requested-machine-because-it-is-locked
+vagrant status
+
+GENERAL
+
+ifconfig
+
+
+
+apt-get install python3-pip
+pip install -r requirements.txt

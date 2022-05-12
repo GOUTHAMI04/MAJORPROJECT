@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\..\\Windows\\System32\\lamp"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\Windows\\System32\\ubuntu\\lamp"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
